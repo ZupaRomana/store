@@ -1,0 +1,13 @@
+<ul>
+  <li *ngFor="let book of (books$ | async)"
+      class="book"
+      [ngClass]="{selected: book === this.selectedBook}">
+    <app-book [book]="book"
+              (bookSelected)="onSelect($event)"></app-book>
+  </li>
+</ul>
+
+
+<h1>{{ 'selected book: ' | uppercase }}</h1>
+<app-book *ngIf="selectedBook"
+          [book]="selectedBook"></app-book>

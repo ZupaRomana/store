@@ -120,5 +120,8 @@
       }
     }
   },
-  "defaultProject": "store"
+  "defaultProject": "store",
+  "cli": {
+    "analytics": "00b77d35-1621-41c4-8eeb-f61b659f9508"
+  }
 }
